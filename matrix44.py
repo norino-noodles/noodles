@@ -38,7 +38,7 @@ class Matrix44:
         result.z = v.x * self.m[0][2] + v.y * self.m[1][2] + v.z * self.m[2][2] + self.m[3][2]
         w = v.x * self.m[0][3] + v.y * self.m[1][3] + v.z * self.m[2][3] + self.m[3][3]
 
-        if (w != 1 && w != 0):
+        if (w != 1 and w != 0):
             result.x = result.x / w
             result.y = result.y / w
             result.z = result.z / w
